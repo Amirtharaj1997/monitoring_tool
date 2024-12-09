@@ -42,6 +42,10 @@ spec:
                 secretKeyRef :
                   name : mysql-secrets
                   key :  password
+            - name: MY_POD_NAME # POD NAME
+              valueFrom :
+                fieldRef :
+                  fieldPath : metadata.name
 
 ---
 
@@ -104,6 +108,10 @@ spec:
                 secretKeyRef :
                   name : mysql-secrets
                   key :  password
+            - name: MY_POD_NAME # POD NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
 ---
 
 apiVersion: v1 # Kubernetes API version
