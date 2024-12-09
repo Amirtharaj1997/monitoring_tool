@@ -1,0 +1,9 @@
+apiVersion : v1
+kind : ConfigMap
+metadata:
+  name : db-config
+data:
+  fraud-host : mysql-service
+  loan-host : loan-mysql-service
+  fraud-dbName: fraud_detection_db
+  loan-dbName: loan_db

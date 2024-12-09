@@ -1,0 +1,4 @@
+FROM openjdk:17
+EXPOSE 8081
+ADD target/fraud-detection-service-1.0.jar fraud-detection-service-1.0.jar
+ENTRYPOINT ["java", "-jar", "/fraud-detection-service-1.0.jar"]

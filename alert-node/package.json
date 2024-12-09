@@ -1,0 +1,19 @@
+{
+  "name": "alert-receiver",
+  "version": "1.0.0",
+  "description": "Receive alert sent by prometheus",
+  "main": "promo_alert_node.js",
+  "scripts": {
+    "start": "node promo_alert_node.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "protobufjs": "^7.4.0",
+    "snappy": "^7.2.2"
+  }
+}
