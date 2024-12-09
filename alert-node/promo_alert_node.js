@@ -33,13 +33,14 @@ app.use((req, res, next) => {
     }
   });
   app.post('/write', (req, res) => {
+   console.log("/topology ======================================================");
     console.log(JSON.stringify(req.body));
+    console.log("/topology ======================================================");
     res.sendStatus(200);
   });
   app.post('/event', bodyParser.json(), (req, res) => {
     console.log("/event ======================================================");
     console.log(JSON.stringify(req.body));
-    console.log(req);
     console.log("/event ======================================================");
     res.sendStatus(200);
   });
