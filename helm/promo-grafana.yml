@@ -4107,6 +4107,10 @@ prometheus:
         metrics_path: '/actuator/prometheus'
         static_configs:
           - targets: [ 'fraud-service:8081' ]
+      - job_name: 'loan-service'
+        metrics_path: '/actuator/prometheus'
+        static_configs:
+          - targets: [ 'loan-service:8080' ]
 
     # If scrape config contains a repetitive section, you may want to use a template.
     # In the following example, you can see how to define `gce_sd_configs` for multiple zones
