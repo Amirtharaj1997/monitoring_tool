@@ -2,7 +2,8 @@
 ## pre-request tool to installed 
 ```
  docker
- K8s
+ minikube
+ kubectl
  helm
  maven
 ```
